@@ -4,10 +4,10 @@ import './ItemTask.css'
 
 export const ItemTask = ({idTask, titleTask, content}) => {
 
-  const {tasks, updateTaskStatus} = useContext(taskContext)
+  const {tasks, UpdateTaskStatus} = useContext(taskContext)
 
   const handleCheckboxChange = () => {
-    updateTaskStatus(idTask, !task.status);
+    UpdateTaskStatus(idTask, !task.status);
   }
 
 

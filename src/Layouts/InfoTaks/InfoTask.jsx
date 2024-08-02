@@ -8,11 +8,11 @@ export const InfoTask = () => {
     const context = useContext(taskContext)
 
     useEffect(() => {
-        let pending = context.task.filter ( tasks => tasks.status === false )
-        let resolve = context.task.filter ( tasks => tasks.status === true )
+        let pending = context.tasks.filter ( tasks => tasks.status === false )
+        let resolve = context.tasks.filter ( tasks => tasks.status === true )
 
-        context.setPendingTasks(pending.length)
-        context.setDoneTasks(resolve.length)
+        context.setPendingTask(pending.length)
+        context.setDoneTask(resolve.length)
 
     }, [context.tasks])
 

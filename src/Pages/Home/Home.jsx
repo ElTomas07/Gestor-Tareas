@@ -9,7 +9,6 @@ import { NewTask } from '../../NewTask/NewTask'
 import { InfoTask } from '../../Layouts/InfoTaks/InfoTask'
 import { FilterTask } from '../../FilterTasks/FilterTask'
 
-
 export const Home = () => {
   
   const context = useContext(taskContext)

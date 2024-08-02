@@ -25,8 +25,8 @@ export const NewTask = () => {
             status: false
         }
 
-        context.setTasks([...context.tasks,newTask])
-        context.setFilteredTasks([...context.tasks,newTask])
+        context.setTask([...context.tasks,newTask])
+        context.setFilteredTask([...context.tasks,newTask])
 
         txtTitle.current.value = ''
         txtDescription.current.value = ''
